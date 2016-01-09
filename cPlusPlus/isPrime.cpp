@@ -4,31 +4,31 @@
 // Contains prototypes for cout & cin
 #include <iostream>
 // purely for demonstration purposes
-using namespace std; 
+using namespace std;
 
 // Prototype for IsPrime function.
 bool IsPrime(int);
 
 // PRE: takes integer as argument for primality test
-// POST: returns true if integer is prime otherwise false 
+// POST: returns true if integer is prime otherwise false
 bool IsPrime(int number)
-{	
+{
     // If number is less than 2 it's not prime i.e.{-Z},0,1
-	if (number < 2)
+    if (number < 2)
         return false;
     // if number equals 2 than it is prime
-	if (number == 2)
-		return true;
-	// if number is divisible by two with 0 remainder then not prime
-    if(number % 2 == 0) 
+    if (number == 2)
+        return true;
+    // if number is divisible by two with 0 remainder then not prime
+    if(number % 2 == 0)
     	return false;
     // check if number is divisible by or odd; previous flow of control removed remaining sets 
     for(int i=3; (i*i) <= number; i+=2)
     {
-        if(number % i == 0) 
+        if(number % i == 0)
         	return false;
     }
-	return true;	
+	return true;
 }
 
 // Main Procedure
@@ -37,7 +37,6 @@ int main()
 	int number;
 	cout << "Enter an integer: ";
 	cin >> number;
-    
 	if (IsPrime(number))
 	{
 		cout << number << " is prime." << endl;
@@ -46,6 +45,6 @@ int main()
 	{
 		cout << number << " is not prime." << endl;
 	}
-    
+
 	return 0;
 }
