@@ -37,7 +37,6 @@ void display_list(vector<int> the_list)
     {
 	cout << the_list[k] << endl;
     }
-
 }
 
 int main()
