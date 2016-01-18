@@ -1,10 +1,8 @@
-// sample program demonstrating simple prime test.
+// file: prime_test.cpp
+// program: primality test of user inputed integer
 // author: ivan
 
-// Contains prototypes for cout & cin
 #include <iostream>
-// purely for demonstration purposes
-using namespace std;
 
 // Prototype for IsPrime function.
 bool IsPrime(int);
@@ -31,9 +29,12 @@ bool IsPrime(int number)
 	return true;
 }
 
-// Main Procedure
 int main()
 {
+	using std::cout;
+	using std::cin;
+	using std::endl;
+
 	int number;
 	cout << "Enter an integer: ";
 	cin >> number;
