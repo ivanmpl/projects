@@ -1,4 +1,6 @@
-# simple program to calculate the balance on your credit card
+#!/usr/bin/env python
+
+'''simple program to calculate the balance on your credit card'''
 
 # balance
 balance = float(raw_input("Enter the outstanding balance on your credit card: "))

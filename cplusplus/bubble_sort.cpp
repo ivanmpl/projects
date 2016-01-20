@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// function declaration
+// function prototypes
 vector<int> bubble_sort(vector<int> int_list);
 void display_list(vector<int> int_list);
 
