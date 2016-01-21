@@ -9,6 +9,7 @@
 // function prototype for palindrome test
 bool isPalindrome(const std::string str);
 bool anotherIsPalindrome(const std::string str);
+bool slowIsPalindrome(const std::string str);
 
 bool isPalindrome(const std::string str)
 {
@@ -35,6 +36,25 @@ bool anotherIsPalindrome(const std::string str)
     return true;
 }
 
+bool slowIsPalindrome(const std::string str)
+{
+    std::string temp = "";
+    
+    for(int i = str.length()-1; i >= 0; i--)
+    {
+        temp += str[i];
+    }
+    
+    for(int j = 0; j < str.length();j++)
+    {
+         if(str[j] != temp[j])
+             return false; 
+    }
+    
+    return true;
+    
+}
+
 int main()
 {
     std::string str;
@@ -44,6 +64,6 @@ int main()
         std::cout << str << " is a palindrome\n";
     else
         std::cout << str << " is not a palindrome\n";
-
+    
     return 0;
 }
