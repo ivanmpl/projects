@@ -12,7 +12,13 @@ int main() {
     std::thread aThread(sampleThread);
     // Join with athread; main thread will wait for aThread to finish
     aThread.join();
+    // Construct thread (calls secondThread from new thread)
+    std::thread bThread([] (){
+        std::cout << "In Lambda" << std::endl;        
+    });
     
+    bThread.join();
+        
     std::cout << "Done" << std::endl;
     return 0;
 }
