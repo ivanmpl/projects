@@ -6,12 +6,23 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Fibonacci Numbers 1-15:");
 
-            for (int i = 0; i < 15; i++)
+            Console.Write("Enter Number of Sequences for Fibonacci: ");
+            var seq_input = Console.ReadLine();            
+            if (int.TryParse(seq_input, out int seq_output))
             {
-                Console.WriteLine($"{i + 1}: {FibonacciNumber(i)}");
+                for (int i = 0; i < seq_output; i++)
+                {
+                    Console.WriteLine($"{i + 1}: {FibonacciNumber(i)}");
+                }
+
             }
+            else
+            {
+                Console.WriteLine($"{seq_input} is not a number");
+            }
+
+
         }
 
         static int FibonacciNumber(int n)
