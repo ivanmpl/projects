@@ -3,11 +3,11 @@
 '''simple program to calculate the balance on your credit card'''
 
 # balance
-balance = float(raw_input("Enter the outstanding balance on your credit card: "))
+balance = float(input("Enter the outstanding balance on your credit card: "))
 # annual interest rate
-annual_int_rate = float(raw_input("Enter the annual credit card interest rate as a decimal: "))
+annual_int_rate = float(input("Enter the annual credit card interest rate as a decimal: "))
 # minimum monthly payment rate
-min_monthly_payment_rate = float(raw_input("Enter the minimum monthly payment rate as a decimal: "))
+min_monthly_payment_rate = float(input("Enter the minimum monthly payment rate as a decimal: "))
 
 # monthly interest rate
 monthly_int_rate = annual_int_rate/12
