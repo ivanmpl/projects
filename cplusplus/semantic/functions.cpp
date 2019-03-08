@@ -31,11 +31,8 @@ std::string get_semantic_string()
 	return line;
 }
 
-bool check_semantic_string(std::string semstring, unsigned int &x, unsigned int &y, unsigned int &z, std::string meta, std::string alpha)
+bool check_semantic_string(std::string semstring, std::string vmsg, unsigned int &x, unsigned int &y, unsigned int &z, std::string meta, std::string alpha)
 {
-	x = 1;
-	y = 2;
-	z = 3;
 	// string is empty; ignore
 	if (semstring.empty())
 	{

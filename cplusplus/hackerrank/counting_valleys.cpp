@@ -30,6 +30,7 @@ int countingValleys(int n, string s)
 
 int main()
 {
+    // sample test case
     int NumberOfValleys = countingValleys(12, "DDUUDDUDUUUD");
     return 0;
 }

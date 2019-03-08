@@ -27,7 +27,7 @@ int main()
     unsigned int x, y, z = 0;
     std::string meta, alpha = "";
 
-    is_valid = functions::check_semantic_string(input_string, x, y, z, meta, alpha);
+    is_valid = functions::check_semantic_string(input_string,vmsg, x, y, z, meta, alpha);
 
     // Determine if semantic string is valid
     //input_string, vmessage, x, y, z, meta, alpha

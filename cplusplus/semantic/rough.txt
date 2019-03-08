@@ -1,0 +1,76 @@
+
+	
+	
+	
+	
+	// check if contains invalid characters
+	//bool has_invalid_char = false;
+	//for (size_t m = 0; m < semstring.length(); m++)
+	//{
+	//}
+
+	/**
+	while ((k < line.length()) && (std::isdigit(line[k])))
+	{
+		++k;
+	}
+
+			if (!isdigit(semstring[m]) || semstring[m] != '.' || semstring[m] != ' ' || std::isalnum(semstring[m]))
+		{
+			is_valid = false;
+			break;
+			cout << "invalid" << endl;
+		}
+
+		if (!x_got && isdigit(semstring[m]))
+		{
+			x_par = semstring[m];
+			x_got = true;
+		}
+
+		if (!y_got && x_got && isdigit(semstring[m]))
+		{
+			y_par = semstring[m];
+			y_got = true;
+		}
+
+		if (!z_got && y_got && isdigit(semstring[m]))
+		{
+			z_par = semstring[m];
+			z_got = true;
+		}
+
+  	std::string::size_type i, k = 0;
+	int count = 0;
+	bool x_got = false;
+	bool y_got = false;
+	bool z_got = false;
+
+	//dot
+	while ((i < line.length()) && (std::isalnum(line[i])))
+	{
+		++i;
+	}
+
+	for (int j = 0; j < line.length(); j++)
+	{
+		if (isspace(line.at(j)))
+		{
+			count++;
+		}
+	}
+
+	cout << i << endl;
+	cout << count << endl;
+	cout << line.length() << endl;
+
+	if (i != (line.length() + count))
+	{
+		cout << "invalid" << endl;
+	}
+
+	if (line.find_first_not_of(' ') != std::string::npos)
+	{
+
+		// There's a non-space.
+	}**/
