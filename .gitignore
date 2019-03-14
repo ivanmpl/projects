@@ -5,6 +5,8 @@ cplusplus/semantic/*.gch
 *.csproj
 .vscode
 
+# Default compiled C++ executable files
+a.out
 
 # Compiled Object files
 *.slo
