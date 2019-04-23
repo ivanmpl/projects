@@ -37,3 +37,6 @@ a.out
 *.exe
 *.out
 *.app
+
+# remove specific file names used for quick usage
+playground.*
