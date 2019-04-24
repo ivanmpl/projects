@@ -40,3 +40,7 @@ a.out
 
 # remove specific file names used for quick usage
 playground.*
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
