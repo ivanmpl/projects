@@ -13,13 +13,42 @@ GO
 
 -- Create a new table called 'Employees' in schema 'dbo'
 -- Drop the table if it already exists
-IF OBJECT_ID('dbo.Accounts', 'U') IS NOT NULL
-DROP TABLE dbo.Accounts
+IF OBJECT_ID('dbo.Employees', 'U') IS NOT NULL
+DROP TABLE dbo.Employees
 GO
 -- Create the table in the specified schema
-CREATE TABLE dbo.Accounts
+CREATE TABLE dbo.Employees
 (
     EmployeesId INT NOT NULL PRIMARY KEY,
+    -- primary key column
+    Name [NVARCHAR](50) NOT NULL,
+    Location [NVARCHAR](50) NOT NULL,
+    Title [NVARCHAR](50) NOT NULL,
+    DepartmentId INT NOT NULL
+    -- specify more columns here
+);
+GO
+
+-- Insert rows into table 'Employees'
+INSERT INTO Employees
+    ([EmployeesId],[Name],[Location],[Title],[DepartmentId])
+VALUES
+    ( 1, N'John', N'Australia', N'Recruiter', 1),
+    ( 2, N'Elizabeth', N'India', N'Software Developer', 2),
+    ( 3, N'Ralf', N'Germany', N'Business Analyst', 2),
+    ( 4, N'Jake', N'United States', N'QA', 2),
+    ( 5, N'Juan', N'Spain', N'CEO', 3)   
+GO
+
+-- Create a new table called 'Department' in schema 'dbo'
+-- Drop the table if it already exists
+IF OBJECT_ID('dbo.Department', 'U') IS NOT NULL
+DROP TABLE dbo.Department
+GO
+-- Create the table in the specified schema
+CREATE TABLE dbo.Department
+(
+    DepartmentId INT NOT NULL PRIMARY KEY,
     -- primary key column
     Name [NVARCHAR](50) NOT NULL,
     Location [NVARCHAR](50) NOT NULL
@@ -27,20 +56,13 @@ CREATE TABLE dbo.Accounts
 );
 GO
 
--- Insert rows into table 'Employees'
-INSERT INTO Employees
-    ([EmployeesId],[Name],[Location])
+-- Insert rows into table 'Department'
+INSERT INTO Department
+    ( -- columns to insert data into
+    [DepartmentId], [Name], [Location]
+    )
 VALUES
-    ( 1, N'John', N'Australia'),
-    ( 2, N'Elizabeth', N'India'),
-    ( 3, N'Ralf', N'Germany'),
-    ( 4, N'Jake', N'United States'),  
-    ( 5, N'Juan', N'Spain')   
-GO
--- Query the total count of employees
-SELECT COUNT(*) as EmployeeCount
-FROM dbo.Employees;
--- Query all employee information
-SELECT e.EmployeesId, e.Name, e.Location
-FROM dbo.Employees as e
+    (1, N'HR', N'Mexico'),
+    (2, N'IT', N'China'),
+    (3, N'Management', N'USA')
 GO
