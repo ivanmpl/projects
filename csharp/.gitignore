@@ -274,5 +274,6 @@ __pycache__/
 # End of https://www.gitignore.io/api/aspnetcore
 
 
-# playground directory
+# playground directory and files
 playground/
+playground.*
