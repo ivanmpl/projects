@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="./styles/card_game.css">
+</head>
+
+<body>
+    <h1>Card Game</h1>
+
+    <div class="instructions">
+        <p>This card game consists of 52 cards made up of 4 suits (Hearts, Spades, Diamonds, and Clubs)</p>
+        <p>Each suit contains 13 cards (2-10, Jack, Queen, King, and Ace)</p>
+        <p>This card game provides the following functionality:</p>
+        <ul>
+            <li>Pick a card from deck</li>
+            <li>Shuffle the deck</li>
+            <li>Reset the deck</li>
+        </ul>
+    </div>
+
+    <h2>Player Actions</h2>
+
+    <div class="card-actions">
+        <p class="deal">
+            <input type="submit" value="Get Card" id="getCardBtn">
+        </p>
+        <p class="shuffle">
+            <input type="submit" value="Shuffle" id="shuffleDeckBtn">
+        </p>
+        <p class="reset">
+            <input type="submit" value="Reset" id="resetDeckBtn">
+        </p>
+    </div>
+
+    <h2>Player Results</h2>
+
+    <div class="card-actions-results">
+        <label for="card">Card:</label>
+        <output id="card"></output><br>
+        <label for="deck">Deck:</label>
+        <output id="deck"></output><br>
+        <label for="reset">Reset:</label>
+        <output id="reset"></output>
+    </div>
+
+    <script type="text/javascript" src="./scripts/card_game.js"></script>
+
+</body>
+
+</html>
