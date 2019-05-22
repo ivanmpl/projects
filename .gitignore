@@ -46,3 +46,6 @@ playground.*
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# configuration and setting files
+init_config.json
