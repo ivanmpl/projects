@@ -1,0 +1,4 @@
+000101 201 "John Smith" 
+000102 1000 "Jane White" 
+000103 3000 "Jack Wayne" 
+000203 5000 "Bruce Wayne" 
