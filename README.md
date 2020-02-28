@@ -1,10 +1,10 @@
 # projects repository
 
-#### Repository for various projects (including those mentioned on my github-page)
+#### Repository for various projects and code snippets
 
 Languages:
 
-     C, C++, C#, Java, SQL, Python, HTML, Markdown, CSS, Javascript, and Typescript 
+     C, C++, C#, Java, SQL, Python, HTML, Markdown, CSS, Javascript and Typescript 
 
 Frameworks and Libraries:
 
